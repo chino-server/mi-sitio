@@ -2,18 +2,20 @@ import React from 'react';
 import './App.css';
 import ResponsiveAppBar from './Components/Nav/navBar';
 import ItemListContainer from './Components/itemListContainer/itemListContainer';
+import ImgMediaCard from './Components/cardComponent/cardComponent';
 
+const App = () => {
 
-class App extends React.Component {
-  render(){
     return (
       <div> 
        <ResponsiveAppBar> </ResponsiveAppBar>
         <ItemListContainer
         greeting="greeting"/>
+        <ImgMediaCard 
+        name= 'Pan'
+        img= 'https://www.recetasderechupete.com/wp-content/uploads/2018/01/Pan-casero-f%C3%A1cil.jpg' />
       </div>
     )
   }
-}
 
 export default App;
