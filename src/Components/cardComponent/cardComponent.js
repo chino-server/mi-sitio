@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography';
 
 
 
+
 export default function ImgMediaCard({img, name}) {
 
   const [counter, setCounter]= React.useState (0)
@@ -47,5 +48,6 @@ export default function ImgMediaCard({img, name}) {
         <Button size="small" onClick={handlerCounterDown}>Descomprar</Button>
       </CardActions>
     </Card>
+    
   );
 }
